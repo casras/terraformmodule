@@ -13,3 +13,7 @@ variable "storageaccount_name" {
 variable "tag_environment" {
   type    = string
 }
+
+variable "tag_managedby" {
+  type    = string
+}

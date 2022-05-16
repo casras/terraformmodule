@@ -4,7 +4,7 @@ resource "azurerm_resource_group" "resource_group" {
   
   tags = {
     environment = var.tag_environment
-    managed-by = "terraform"
+    managed-by = var.tag_managedby
   }
 }
 
@@ -17,6 +17,6 @@ resource "azurerm_storage_account" "storage" {
 
   tags = {
     environment = var.tag_environment
-    managed-by = "terraform"
+    managed-by = var.tag_managedby
   }
 }
