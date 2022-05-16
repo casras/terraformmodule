@@ -4,6 +4,7 @@ resource "azurerm_resource_group" "resource_group" {
   
   tags = {
     environment = var.tag_environment
+    managed-by = "terraform"
   }
 }
 
